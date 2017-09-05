@@ -14,7 +14,7 @@ let ws = (() => {
   }
 
   let randNumber = Math.floor((Math.random() * 10000) + 1);
-  let uri = `${protocolSocket}62.176.19.7:2405/stream/${randNumber}`;
+  let uri = `${protocolSocket}127.0.0.1:2405/stream/${randNumber}`;
   let socket = new WebSocket(uri);
 
   return socket;
